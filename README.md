@@ -1,4 +1,4 @@
-# simplecompteurVisite
+# Simple Compteur de Visite
 
 Compteur de visite pour petit projet (onepage) sans sql.
 
