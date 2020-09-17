@@ -6,6 +6,9 @@ Compteur de visite pour petit projet (onepage) sans sql.
  - crée le fichier compteur.txt (n'oublies pas les droits)
  - integres le script sur les pages a voir
  
+ sur resultat.php:
+ - renseignes ton mot de pass
+ 
  **valeur retournée**
  
  - ["ip visiteur"]=> ip suivie
