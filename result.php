@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Résultats</title>
     <style>
         table,
         th,
@@ -32,11 +32,9 @@
     if (isset($_POST['passwd']) and $_POST['passwd'] == "Ton mot de passe ici") {
         $filename = 'compteur.txt';
         $visitors = unserialize(file_get_contents($filename));
-
-
-
     ?>
-        <h1>Visite du OnePage</h1>
+
+    <h1>Visite du OnePage</h1>
         <table>
             <tr>
                 <th>IP</th>
@@ -45,8 +43,6 @@
                 <th>Premiere visite</th>
             </tr>
             <?php
-
-
             foreach ($visitors as $key => $value) {
                 echo "<tr>";
 
@@ -57,8 +53,6 @@
                 echo "</tr>";
             }
             ?>
-
-
         </table>
         <p>* le nombre correspond au nombre de fois que la page à été vue ou actualisée</p>
     <?php
@@ -75,8 +69,6 @@
     }
 
     ?>
-
-
 
 
 </body>
