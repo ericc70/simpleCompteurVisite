@@ -41,15 +41,23 @@
                 <th>Dernière visite</th>
                 <th>Nombres de visite*</th>
                 <th>Premiere visite</th>
+                <th>Referent</th>
             </tr>
             <?php
             foreach ($visitors as $key => $value) {
                 echo "<tr>";
 
                 echo "<td>" . $key . "</td>";
-                echo "<td>" . date('m-d-Y', $value[0]) . "</td>";
+                echo "<td>" . date('d-m-Y H:m:s', $value[0]) . "</td>";
                 echo "<td>" . $value[1] . "</td>";
-                echo "<td>" . date('m-d-Y', $value[2]) . "</td>";
+                echo "<td>" . date('d-m-Y H:m:s', $value[2]) . "</td>";
+                echo "<td>" ;
+                foreach( $value[3] as $v ){
+                    if ($v == NULL) echo "/";
+                    echo  $v;
+                    echo "</br>";
+                }
+                echo "</td>";
                 echo "</tr>";
             }
             ?>
